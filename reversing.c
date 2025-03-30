@@ -1,12 +1,17 @@
 #include <stdio.h> 
-#include <math.h> 
-void main() { 
-    float a,b,c,r1 ,r2; 
-    printf("Enter three numbers "); 
-    scanf("%f %f %f", &a,&b,&c); 
-    float d = (b*b)-(4*a*c); 
-if (a==0){ printf("Not a quadractic equation"); }
-else if(d==0){r1=-b/(2*a) ; printf("roots are equal %f " ,r1);}    
-else if (d>0){r1 = (-b+sqrt(d))/(2*a) ;r2 = (-b-sqrt(d))/(2*a);
-printf("real and distinct roots %f %f", r1, r2 ); }  
-else {r1=-b/(2*a) ;r2=(sqrt(-d)) /(2*a) ; printf("complex roots %f + and - %f",r1 ,r2);}}
+void main(){ 
+    int array[]= { 9,1,2,3,4}; 
+    int f = 0 ; int l = 4; 
+    while(f<l){ 
+        int temp = array[f];
+        array[f]=array[l]; 
+        array[l]=temp ; 
+        f++; 
+        l--; } 
+for (int i = 0 ; i<=4; i++){ 
+    printf("%d ", array[i]); 
+}
+
+        
+        
+    }
